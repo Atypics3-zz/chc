@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* * {box-sizing: border-box} */
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 1;
+  font-family: Arial, 'Times-New_Roman', serif, Times;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #819FF7;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* changes background color of the tabs */
+#Home {background-color:rgba(166, 166, 166, 0.85);}
+#News {background-color:rgba(166, 166, 166, 0.85);}
+#Contacts {background-color:rgba(166, 166, 166, 0.85);}
+#Misc {background-color:rgba(166, 166, 166, 0.85);}
+
+/* Centers any text or image */
+.center {
+  text-align: center
+  }
+
+h1 {
+    color: #3ADF00;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1.5px solid gray;
+}
+
+h2 {
+    color: #5858FA;
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #000000;
+    font-size: 1.2em;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    color: #000000;
+    font-size:1.1em;
+    font-family: Georgia, Times, serif;
+}
+
+body {
+    padding: 100px;
+    font-family: Arial, 'Times-New_Roman', serif, Times;
+    background-image: url('background.jpg');
+    background-attachment: scroll;
+    background-position: -5px 100px;
+    background-repeat: no-repeat,repeat;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightcolumn {
+    float: right;
+    width: 20%;
+    padding-right: 0px;
+}
+
+.leftcolumn {
+    float: left;
+    width: 20%;
+    padding-left: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1080px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 1920px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<title>Chabot's CHC</title>
+<img src = "logo.jpg" width="100" height="100" alt="logo">
+
+<button class="tablink" onclick="openPage('Home', this, '#819FF7')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#819FF7')">News</button>
+<button class="tablink" onclick="openPage('Contacts', this, '#819FF7')">Contacts</button>
+<button class="tablink" onclick="openPage('Misc', this, '#819FF7')">Misc.</button>
+
+<!--Header stuff-->
+<div id="Home" class="tabcontent">
+    <h1 class="center">Chabot's Computer Hardware Club</h1>
+    <h2 class="center"> We make things practical! </h2>
+  <h2 class="center">Our club's primary objective is to help each other learn and discuss about Computer Hardware.</h2>
+  <br><br>
+      <div class="rightcolumn">
+    <h2>Join our Discord Server here!</h2>
+    <!-- Discord widget, don't know why it gives a error -->
+    <iframe src="https://discordapp.com/widget?id=732492230992068638&theme=dark" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    
+  <div class="center">
+    <h2>Some of the stuff that we do are:</h2>
+    <li>Building PCs</li>
+    <li>Computer Safety</li>
+    <li>Software Installation</li>
+    <li>Talking about Hardware-related Topics</li>
+    <li>and more!</li>
+    <br><br>
+    <h2>Requirements:</h2>
+    <li class="center">MUST be enrolled in at least one unit @ <a href="https://www.google.com/maps/dir//chabot+college/@37.6397698,-122.0721981,13.75z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808f914b037ff413:0x7e63f92d4f890bc5!2m2!1d-122.1062344!2d37.6427231">Chabot College</a></li>
+    <li><s>We meet every other Tuesday @ the Chabot College Library (Building 100, 2nd Floor) from 12:00 PM to 1:00 PM</s></li>
+    <p style="color:red;">Due to the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19 Pandemic</a>, we will be meeting on <a href="https://us02web.zoom.us/j/4464303772?pwd=eHZGUUVVWDMvRmw2S1JFb21FTVAvUT09">Zoom</a> from now on.</p>
+    <br><br>
+    <h2>How to Join:</h2>
+    <p>If you're interested in joining the club, please send your name,email, and phone number to <a href=mailto:chabot.ch.club@gmail.com>chabot.ch.club@gmail.com</a>.</p>
+    </div>
+</div>
+
+<div id="News" class="tabcontent">
+  <h1>Announcements</h1>
+        <div class="center rightcolumn">
+      <h1>Events</h1>
+      <li><a href="event.html">League of STEM Showcase</a></li>
+  </div>
+  <p>Please fill out these forms ASAP:</p>
+  <br>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSca8gsgohzO1H6rM-of3SzCH0WQN8zbJZsKZZ1jMAlGp0LiCg/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1nrwZG1j0dCREhg6Kbe2yx4K2RF6RD7_DxzEJpBoBj6Vyqw/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <br>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJcZ5hG8KMyhYl4zVYK9FbKfUDngxAdC3FpuMMJoISbxJ_gA/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-_3o-yuwodDa60fy_I5ei84QyS9EIt6ITxAf-FLLskQVPBQ/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <br>
+  
+  <div class="center">
+  <h1>News</h1>
+  <p class="center">Nothing for now</p>
+  </div>
+</div>
+
+
+<div id='Contacts' class="tabcontent">
+  <div class="leftcolumn">
+    <h2>Contact Us:</h2>
+    <p><a href="mailto:chabot.ch.club@gmail.com"> Click Here!</a></p>
+  </div>
+</div>
+
+
+<div id='Misc' class="tabcontent">
+  <h1>Club Schedule</h1>
+  <br>
+  <a href="https://docs.google.com/document/d/16hahMGT0rBIz5G2-7w8kHUhGIjPDoW_i8sRgLAx5gr8/edit?usp=sharing">Click Here!</a>
+  <h1>Topics</h1>
+  <p>Stuff will go here soon</p>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>

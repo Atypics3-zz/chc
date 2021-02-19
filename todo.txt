@@ -1,0 +1,7 @@
+<!--TODO LIST:
+- A Contact Us Script/Tab []
+- Somehow integrate the club schedule [x]
+- Club Officers/The Team section (picture/bio and info) []
+- Events/Announcements as separate pages/tabs []
+- ...
+-->
