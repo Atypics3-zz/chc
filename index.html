@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Using w3schools framework -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<style>
+/* Set height of body and the document to auto */
+body, html {
+  height: auto;
+  width: auto;
+  margin: 0;
+  font-family: Arial, 'Times New Roman', serif, Times;
+  border-radius: 10px;
+  
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 15px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #819FF7;
+}
+
+/* Style the tab content */
+.tabcontent {
+
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* changes background color of the tabs */
+#Home {background-color:rgba(166, 166, 166, 0.85);}
+#News {background-color:rgba(166, 166, 166, 0.85);}
+#About_Us {background-color:rgba(166,166,166,0.85);}
+#Contact_Us {background-color:rgba(166, 166, 166, 0.85);}
+#Events {background-color:rgba(166,166,166,0.85);}
+#Misc {background-color:rgba(166, 166, 166, 0.85);}
+
+/* Centers any text or image */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: auto;
+  }
+
+.center_image {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {
+    color: #3ADF00;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid gray;
+}
+
+h2 {
+    color: #5858FA;
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #000000;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    color: #000000;
+    font-size:1.1em;
+    font-family: Georgia, Times, serif;
+}
+
+body {
+    padding: 105px;
+    border-radius: 10px;
+    font-family: Arial, 'Times-New_Roman', serif, Times;
+    background-image: url('background.jpg');
+    background-attachment: scroll;
+    background-position: -5px 100px;
+    background-repeat: no-repeat,repeat;
+    background-size: cover;
+}
+
+img {
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightcolumn {
+    float: right;
+    width: auto;
+    padding-right: 5px;
+}
+
+.leftcolumn {
+    float: left;
+    width: auto;
+    padding-left: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor:pointer;
+    text-align: center;
+    text-decoration:none;
+    outline:none;
+    color: #fff;
+    background-color: #4CAF50;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 9x #999;
+}
+
+.button:hover {background-color: #3e8e41};
+
+.button:active {
+    background-color: green;
+    box-shadow: 0 5x #666;
+    transform: translateY(4px);
+}
+
+</style>
+</head>
+
+<body>
+<title>Chabot's CHC</title>
+
+
+<div class="header-right">
+<button class="tablink" onclick="openPage('Home', this, '#819FF7')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#819FF7')">News</button>
+<button class="tablink" onclick="openPage('About_Us', this, '#819FF7')">About Us</button>
+<button class="tablink" onclick="openPage('Contact_Us', this, '#819FF7')">Contact Us</button>
+<button class="tablink" onclick="openPage('Events',this,'#819FF7')">Events</button>
+<button class="tablink" onclick="openPage('Misc', this, '#819FF7')">Misc.</button>
+</div>
+
+<!--Header stuff-->
+<div id="Home" class="tabcontent">
+    <img src = "logo.jpg" width="100" height="100" alt="logo" class="center_image">
+    <h1 class="center">Chabot's Computer Hardware Club</h1>
+    <h2 class="center"> We make things practical! </h2>
+  <h2 class="center">Our club's primary objective is to help each other learn and discuss about computer hardware and technology-related topics.</h2>
+  <br><br>
+  
+  
+    <div class="rightcolumn">
+    
+    </div>
+
+    
+  <div class="center">
+    <h2>Some of the stuff that we do are:</h2>
+    <li>Building PCs
+    <li> Computer Safety
+    <li>Software Installation
+    <li>Talking about Hardware-related Topics </li>
+    <li>and more!</li>
+    <br><br>
+    
+    <li><s>We meet every other Tuesday @ the Chabot College Library (Building 100, 2nd Floor) from 12:00 PM to 1:00 PM</s></li>
+    <p style="color:red;">Due to the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19 Pandemic</a>, we will be meeting on <a href="https://discord.gg/ddW7XdG">Discord</a> from now on.</p>
+    <br><br>
+        <h2>Requirements:</h2>
+    <li>MUST be enrolled in at least one unit @ <a href="https://www.google.com/maps/dir//chabot+college/@37.6397698,-122.0721981,13.75z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808f914b037ff413:0x7e63f92d4f890bc5!2m2!1d-122.1062344!2d37.6427231">Chabot College</a></li>
+    <br><br>
+    <h2>How to Join:</h2>
+    <p>If you're interested in joining the club, please send your name,email, and phone number to <a href=mailto:chabot.ch.club@gmail.com>chabot.ch.club@gmail.com</a>.</p>
+    </div>
+</div>
+
+
+<div id="News" class="tabcontent">
+    <div class="center">
+  <h1>Announcements</h1>
+  
+  <p>Please fill out these forms ASAP:</p>
+  <a href=https://forms.gle/XDViAHz1VpVbitR18>Computer Hardware Activities and Demos:</a>
+  <br>
+  <a href=https://forms.gle/uqPdSFQyxPt97C8Z8>Discussion Topics:</a>
+  <br>
+  <a href=https://forms.gle/Hdkbu3mjDiTqjSuq6>Misc. Club Stuff:</a>
+  <br>
+  <a href=https://forms.gle/Vcx34eiGr9Zz8LCAA>Things to put in Discord Server:</a>
+  <br>
+  
+  <!---
+  <br>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSca8gsgohzO1H6rM-of3SzCH0WQN8zbJZsKZZ1jMAlGp0LiCg/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1nrwZG1j0dCREhg6Kbe2yx4K2RF6RD7_DxzEJpBoBj6Vyqw/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <br>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJcZ5hG8KMyhYl4zVYK9FbKfUDngxAdC3FpuMMJoISbxJ_gA/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-_3o-yuwodDa60fy_I5ei84QyS9EIt6ITxAf-FLLskQVPBQ/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <br>
+  -->
+  
+  <h1>News</h1>
+  <p class="center">Nothing for now</p>
+  </div>
+</div>
+
+
+<div id='About_Us' class="tabcontent">
+    <p>stuff will go here soon</p>
+</div>
+
+
+<div id='Contact_Us' class="tabcontent">
+  <div class="leftcolumn">
+    <h2>Contact Us:</h2>
+    <button class="button"><a href="mailto:chabot.ch.club@gmail.com"> Click Here!</a></button>
+  </div>
+  
+  <div class="rightcolumn">
+    <h2>Join our Discord Server here!</h2>
+    <!-- Discord widget, don't know why it gives a error -->
+    <iframe src="https://discordapp.com/widget?id=732492230992068638&theme=dark" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+</div>
+
+
+<div id='Misc' class="tabcontent">
+  <h1>Club Schedule</h1>
+  <br>
+  <div class="center">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vSuNCCCbnJpoqnrhfIdY7tJPph5E9LWiXvEKsKi4rIly6P11ZUSz_Y7DfJA0tnmK-9tI0YA6g2rOECx/pub?embedded=true" width="500" height="500" ></iframe>
+  </div>
+  <h1>Topics</h1>
+  <p class = "center">Possible discussion topics are: <br>
+    1) Computer networking (switches, routers/modems, access points, etc.) <br>
+    2) How Linux works and the big 3 OS' <br>
+    3) What assembly language is and how it works <br>
+    4) How the insides of a PC works (binary/analog/etc.)  <br>
+    5) Raspberry Pi 4  <br>
+    6)  Robotics(?) <br>
+  </p>
+
+</div>
+
+<div id='Events' class="tabcontent">
+    <div class="center">
+      <h1>Events</h1>
+      <p><s style= color:blue><a href="event.html">League of STEM Showcase
+      </a></s>
+      <br> Postponed until further notice.
+      </p>
+  </div>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
